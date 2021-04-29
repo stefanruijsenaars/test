@@ -1,4 +1,3 @@
 <?php
-
-$res = "{\"foo\":\"bar\",\"baz\":\"long\"}}";
-file_put_contents('data2.json.gz',  gzcompress($res, 9));
+$res = file_get_contents("test.json");
+file_put_contents('test.json.gz',  gzcompress($res, 9));
